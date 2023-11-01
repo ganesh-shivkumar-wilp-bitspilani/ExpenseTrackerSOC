@@ -1,7 +1,6 @@
 const {constants} = require("../constants")
 const errorHandler = ( err, req, res, next ) => {
     const statusCode = res.statusCode ? res.statusCode : 500;
-
     switch(statusCode) {
         case constants.BAD_REQUEST:
              res.json({ title: "Validation Failed", code: statusCode, message: err.message, stackTrace: err.stack});
