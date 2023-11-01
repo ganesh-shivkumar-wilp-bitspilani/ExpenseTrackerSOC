@@ -3,5 +3,7 @@ exports.constants = {
     UNAUTHORIZED: 401,
     FORBIDDEN: 403,
     NOT_FOUND: 404,
-    INTERNAL_ERROR: 500
+    INTERNAL_ERROR: 500,
+    SUCCESS: 200,
+    CREATED: 201
 }
